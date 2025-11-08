@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  damage-classifier:
+    build: .
+    container_name: damage_classifier_app
+    ports:
+      - "5000:5000"
+    restart: unless-stopped
